@@ -35,12 +35,12 @@ namespace GameUserInterface.Animation{
 
         //Black to invisible
         public int PlayTransitionFadeIn(){
-            Util.ChangeAlphaImageAnimation(transitionScreen, 0f, animationTime);
+            UtilLeanTween.ChangeAlphaImageAnimation(transitionScreen, 0f, animationTime);
             return Util.ConvertToMili(animationTime);
         }
 
         public int PlayTransitionFadeOut(){ //Not used yet
-            Util.ChangeAlphaImageAnimation(transitionScreen, 1f, animationTime);
+            UtilLeanTween.ChangeAlphaImageAnimation(transitionScreen, 1f, animationTime);
             return Util.ConvertToMili(animationTime);
         }
 

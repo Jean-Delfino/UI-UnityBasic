@@ -41,8 +41,8 @@ namespace GameUserInterface.Input{
 
             //print("texto = " + this.thisInput.text + " " + thisInput.text.Length);
 
-            Util.UnityEventInvokeAllListenersTheSame
-                (m_MyEvent, new object[] {this.thisInput.text}, new Type [] {typeof(string)});
+            Util.UnityEventInvokeAllListenersTheSame(
+                m_MyEvent, new object[] {this.thisInput.text}, new Type [] {typeof(string)});
 
             submitDependence.Invoke();
         }
