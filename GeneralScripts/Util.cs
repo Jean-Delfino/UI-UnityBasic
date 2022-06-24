@@ -176,27 +176,6 @@ public static class Util{
     public static int ConvertToMili(double seconds){
         return (int) TimeSpan.FromSeconds(seconds).TotalMilliseconds;
     }
-
-    //Animations
-    public static float ChangeScaleAnimation(RectTransform rt, Vector3 finalScale, float time){
-        if(rt.localScale == finalScale){
-            return 0f;
-        } 
-
-        LeanTween.scale(rt, finalScale, time);
-        return time;
-    }
-
-    public static float ChangeAlphaImageAnimation(RectTransform rt, float finalAlpha, float time){
-        LeanTween.alpha(rt, finalAlpha, time); 
-        return time;
-    }
-
-    public static float ChangeAlphaCanvasImageAnimation(CanvasGroup rt, float finalAlpha, float time){
-        LeanTween.alphaCanvas(rt, finalAlpha, time); 
-        return time;
-    }
-
     //Rect Transform 
 
     public static void CopyRectTransform(RectTransform destiny, RectTransform origin){

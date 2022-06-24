@@ -33,18 +33,6 @@ namespace GameUserInterface.Animation{
         [SerializeField] RectTransform transitionScreen = default;
         [SerializeField] float animationTime = default;
 
-        //Black to invisible
-        public int PlayTransitionFadeIn(){
-            Util.ChangeAlphaImageAnimation(transitionScreen, 0f, animationTime);
-            return Util.ConvertToMili(animationTime);
-        }
-
-        public int PlayTransitionFadeOut(){ //Not used yet
-            Util.ChangeAlphaImageAnimation(transitionScreen, 1f, animationTime);
-            return Util.ConvertToMili(animationTime);
-        }
-
-
         public void DisableTransition(){
             //myAnimator.SetBool("Expand", true);
 
